@@ -63,7 +63,7 @@ class Module(object):
             path_parts = self.m.GetPath().AsString().split('/')
         except AttributeError:
             path_parts = self.m.GetPath().split('/')
-        return '/'.join(path_parts[:-1])
+        return '/'.join(path_parts)
 
     @property
     def bbox(self):
